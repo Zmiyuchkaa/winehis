@@ -16,21 +16,29 @@
   height: 100vh;
 }
 
-.header {
-  max-height: 127px;
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  font-size: 14px;
+#logo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
 }
+
 
 .menu {
   display: flex;
-  margin-top: 62px;
+  justify-content: flex-end;
+  color: white;
+  font-size: 14px;
+  height: 127px;
+  padding-top: 60px;
 }
 
 .menu p {
   margin-right: 100px;
+}
+
+.menu p:last-child {
+  margin-right: 170px;
 }
 
 .menu-item:hover {
@@ -42,12 +50,14 @@
 }
 
 .menu-burger {
-  margin-top: -13px;
-  margin-right: 50px;
+  position: fixed;
+  right: 43px;
+  top: 47px;
+  z-index: 2;
   display: block;
   background: url("images/burger.svg") no-repeat;
   width: 46px;
-  height: auto;
+  height: 46px;
 }
 
 .menu-burger:hover {
@@ -73,7 +83,7 @@
 
 .bottle {
   position: absolute;
-  right: 31g%;
+  right: 31%;
   top: 245px;
   z-index: -1;
 }
@@ -85,7 +95,6 @@
   text-align: center;
   margin: 140px  auto 10px;
   line-height: 100%;
-  /* z-index: 50; */
 }
 
 .page-content__slider {
