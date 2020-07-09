@@ -10,7 +10,7 @@
 }
 
 .main-slider {
-  background: url("images/slider.png") #222222;
+  background: url("images/slider.png") no-repeat center top #222222;
   max-width: 2560px;
   min-width: 768px;
   height: 100vh;
@@ -88,6 +88,34 @@
   z-index: -1;
 }
 
+.single-grape-top {
+  position: absolute;
+  right: 0%;
+  top: 240px;
+  z-index: 1;
+}
+
+.single-grape-4 {
+  position: absolute;
+  left: 18%;
+  top: 360px;
+  z-index: 1;
+}
+
+.single-grape-1 {
+  position: absolute;
+  left: 0;
+  bottom: -250px;
+  z-index: 2;
+}
+
+.single-grape-3 {
+  position: absolute;
+  right: 22%;
+  bottom: 240px;
+  z-index: 1;
+}
+
 .page-content__title {
   font-family: Abraham Lincoln, sans-serif;
   font-size: 5em;
@@ -148,6 +176,7 @@ button:focus {
   justify-content: space-around;
   color: #818181;
   font-family: Abraham Lincoln, sans-serif;
+  z-index: 5;
 }
 
 .current-number {
