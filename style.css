@@ -95,4 +95,11 @@
 
 .button {
   text-decoration: none;
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+button:focus { 
+  outline: none; 
 }

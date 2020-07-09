@@ -2,7 +2,8 @@ const onLoad = () => {
 const prevButton = document.querySelector("#back");
 const nextButton = document.querySelector("#forward");
 const content = document.querySelector(".page-content__slider__text");
-const counterElem = document.querySelector("#counter")
+const currentElem = document.querySelector("#current");
+const totalElem = document.querySelector("#total")
 
 let state = {
   index: 0,
@@ -33,6 +34,7 @@ function isPrevButtonDisabled(state) {
 
 prevButton.addEventListener("click", () => {
   state.index  -= 1;
+  currentElem.innerText = state.index +1;
   content.innerText = state.values[state.index]
   prevButton.disabled = isPrevButtonDisabled(state)
   nextButton.disabled = isNextButtonDisabled(state)
@@ -40,15 +42,18 @@ prevButton.addEventListener("click", () => {
 
 nextButton.addEventListener("click", () => {
   state.index  += 1;
+  currentElem.innerText = state.index +1;
   content.innerText = state.values[state.index]
   prevButton.disabled = isPrevButtonDisabled(state)
   nextButton.disabled = isNextButtonDisabled(state)
 })
 
 function InitJS() {
-  content.innerText = state.values[state.index]
-  prevButton.disabled = isPrevButtonDisabled(state)
-  nextButton.disabled = isNextButtonDisabled(state)
+  content.innerText = state.values[state.index];
+  prevButton.disabled = isPrevButtonDisabled(state);
+  nextButton.disabled = isNextButtonDisabled(state);
+  currentElem.innerText = state.index +1;
+  totalElem.innerText = state.values.length;
 }
 
 InitJS()
