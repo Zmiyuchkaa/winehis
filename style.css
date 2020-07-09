@@ -48,6 +48,7 @@
   background: url("images/burger.svg") no-repeat;
   width: 46px;
   height: auto;
+  position: fixed;
 }
 
 .menu-burger:hover {
@@ -72,7 +73,14 @@
   line-height: 100%;
 }
 
-.page-content__text {
+.page-content__slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.page-content__slider__text {
   font-family: Roboto, sans-serif;
   font-style: italic;
   font-size: 14px;
@@ -83,4 +91,8 @@
   text-align: center;
   color: #d3d3d3;
   line-height: 26px;
+}
+
+.button {
+  text-decoration: none;
 }
