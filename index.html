@@ -16,8 +16,9 @@
   <body>
     <main>
       <div class="main-slider">
+
         <header class="header">
-          <div><img src="images/full-logo.png" /></div>
+          <div id="logo"><img src="images/full-logo.png" /></div>
           <div class="menu">
             <p class="menu-item">About us</p>
             <p class="menu-item">History</p>
@@ -26,20 +27,36 @@
             <div class="menu-burger"></div>
           </div>
         </header>
-        <div class="page-content">
-          <h1 class="page-content__title">Explore the world of wine</h1>
-          <div class="page-content__slider">
-            <p class="page-content__slider__text">
-            </p>
-          </div>
-          <div>
-            <button id="back" class="button"><img src="images/back-button.png"></button>
-            <button id="forward" class="button"><img src="images/next-button.png"></button>
-            <p id="current"></p>/
-            <p id="total"></p>
+
+        <div>
+          <div class="page-content">
+            <div><img class="grapes" src="images/intro-grape.png"></div>
+            <div><img class="bottle" src="images/bottle.png"></div>
+            <h1 class="page-content__title">Explore the world of wine</h1>
+            <div class="page-content__slider">
+              
+              <p class="page-content__slider__text">
+                
+              </p>
+            </div>
           </div>
           
+          <div class="page-content__slider__footer">
+            <div class="page-content__slider__footer__counter">
+              <p id="current" class="current-number"></p>
+              <p class="slash">/</p>
+              <p id="total" class="total-number"></p>
+            </div>
+            <div>
+              <button id="back" class="button back"><img src="images/back-button.png"></button>
+              <button id="forward" class="button"><img src="images/next-button.png"></button>
+            </div>
+          </div>
         </div>
+        <div>
+          
+        </div>
+
       </div>
     </main>
   </body>

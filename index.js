@@ -5,6 +5,11 @@ const content = document.querySelector(".page-content__slider__text");
 const currentElem = document.querySelector("#current");
 const totalElem = document.querySelector("#total")
 
+
+// window.addEventListener("scroll", function() {
+//   document.getElementById("logo").innerHTML = <div><img src="images/short-logo.png"/></div>
+// })
+
 let state = {
   index: 0,
   values: [
@@ -34,7 +39,7 @@ function isPrevButtonDisabled(state) {
 
 prevButton.addEventListener("click", () => {
   state.index  -= 1;
-  currentElem.innerText = state.index +1;
+  currentElem.innerText = "0" + (state.index +1);
   content.innerText = state.values[state.index]
   prevButton.disabled = isPrevButtonDisabled(state)
   nextButton.disabled = isNextButtonDisabled(state)
@@ -42,18 +47,18 @@ prevButton.addEventListener("click", () => {
 
 nextButton.addEventListener("click", () => {
   state.index  += 1;
-  currentElem.innerText = state.index +1;
+  currentElem.innerText = "0" + (state.index +1);
   content.innerText = state.values[state.index]
   prevButton.disabled = isPrevButtonDisabled(state)
   nextButton.disabled = isNextButtonDisabled(state)
 })
 
 function InitJS() {
-  content.innerText = state.values[state.index];
+  content.innerText =  state.values[state.index];
   prevButton.disabled = isPrevButtonDisabled(state);
   nextButton.disabled = isNextButtonDisabled(state);
-  currentElem.innerText = state.index +1;
-  totalElem.innerText = state.values.length;
+  currentElem.innerText = "0" + (state.index +1);
+  totalElem.innerText = "0" + (state.values.length);
 }
 
 InitJS()
