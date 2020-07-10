@@ -20,21 +20,11 @@ let state = {
 }
 
 function isNextButtonDisabled(state) {
-  if (state.index == state.values.length -1) {
-    return true;
-  }
-  else {
-    return false;
-  }
+  return state.index === state.values.length -1;
 }
 
 function isPrevButtonDisabled(state) {
-  if (state.index == 0) {
-    return true;
-  }
-  else {
-    return false;
-  }
+  return state.index == 0;
 }
 
 prevButton.addEventListener("click", () => {

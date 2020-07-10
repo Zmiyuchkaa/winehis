@@ -79,6 +79,7 @@
   right: 16%;
   top: 36px;
   z-index: -2;
+  transform: translateZ(0);
 }
 
 .bottle {
@@ -86,6 +87,7 @@
   right: 31%;
   top: 245px;
   z-index: -1;
+  transform: translateZ(-1px);
 }
 
 .single-grape-top {
@@ -116,12 +118,13 @@
   z-index: 1;
 }
 
+
 .page-content__title {
   font-family: Abraham Lincoln, sans-serif;
   font-size: 5em;
   color: white;
   text-align: center;
-  margin: 140px  auto 10px;
+  margin: 100px  auto 10px;
   line-height: 100%;
 }
 
@@ -199,8 +202,21 @@ button:focus {
 }
 
 
-/* 
-position: fixed;
-    right: 0;
-    top: 46px;
-    z-index: 2; */
+/* slider 2 */
+
+.slider2 {
+  background: url("images/slider2.png") no-repeat center top #222222;
+  max-width: 2560px;
+  min-width: 768px;
+  height: 100vh;
+}
+
+.slider2__container__image {
+  margin-top: 15%;
+  margin-left: 34%;
+}
+
+.slider2__container__image-black {
+  margin-top: 0;
+  margin-left: 34%;
+}
