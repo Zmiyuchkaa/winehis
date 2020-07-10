@@ -214,7 +214,8 @@ button:focus {
 .slider2__container__image {
   margin-top: 35%;
   margin-left: 35%;
-  
+  z-index: 5;
+  position: relative;
 }
 
 .slider2__container__image-black {
@@ -231,6 +232,7 @@ button:focus {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  z-index: 6;
 }
 
 .slider2__container__text {
@@ -245,6 +247,7 @@ button:focus {
   margin-right: auto;
   text-align: center;
   max-width: 490px;
+  z-index: 6;
 }
 
 .text-decoration {
@@ -258,12 +261,46 @@ button:focus {
   z-index: 1;
 }
 
+.slide2-grapes2 {
+  position: absolute;
+  left:0;
+  top: 130%;
+  z-index: 1;
+}
+
 .single-grape-5 {
   position: absolute;
   right: 22%;
   top: 180%;
   z-index: 1;
   width: 100px;
+  height: auto;
+}
+
+.single-grape-6 {
+  position: absolute;
+  left: 18%;
+  top: 210%;
+  z-index: 1;
+  width: 220px; 
+  height: auto;
+}
+
+.leaf1 {
+  position: absolute;
+  left: 33%;
+  top: 168%;
+  z-index: 0;
+  width: 180px;
+  height: auto;
+}
+
+.leaf2 {
+  position: absolute;
+  left: 58%;
+  top: 212g%;
+  z-index: 0;
+  width: 180px;
   height: auto;
 }
 
